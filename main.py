@@ -1,5 +1,6 @@
 # Octodollop Version 0.0.1
-# (C) 2017 | Damien MechaMonarchs. All rights reserved.
+# (C) 2017 | Damien MechaMonarchs. 
+# Licensed under Apache 2.0 License
 #
 # main.py
 # This file is responsible for making the application run properly.
