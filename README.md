@@ -5,9 +5,9 @@
 ## About this repository
 This repo serves as a playground for [RobotPy](https://robotpy.github.io/) and [PyQt v.5](https://www.riverbankcomputing.com/software/pyqt/intro) in hopes that we may actually use this code to create software for the robot and this year's FRC competition (2018).
 
-When something is actually made with these technologies in Octodollop, they will be dumped into Resonance, the name of the robot software (though there's no repo yet).
+When something is actually made with these technologies in Octodollop, they will be dumped into [Resonance](http://www.github.com/dmsmechamonarchs2896/resonance), the name of the robot software.
 
-This code is licensed under the [Apache 2.0 License](LICENSE); feel free to use this code to mess around with PyQt and RobotPy. If you want something more solid, check out the Resonance repository.
+This code is licensed under the [Apache 2.0 License](LICENSE); feel free to use this code to mess around with PyQt and RobotPy. If you want something more solid, check out the [Resonance](http://www.github.com/dmsmechamonarchs2896/resonance) repository.
 
 ## Requisites
 In order to use and/or build Octodollop, you'll need the following:
