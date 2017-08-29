@@ -7,7 +7,7 @@ This repo serves as a playground for [RobotPy](https://robotpy.github.io/) and [
 
 When something is actually made with these technologies in Octodollop, they will be dumped into Resonance, the name of the robot software (though there's no repo yet).
 
-This code is licensed under the [Apache 2.0 License](LICENSE.md); feel free to use this code to mess around with PyQt and RobotPy. If you want something more solid, check out the Resonance repository.
+This code is licensed under the [Apache 2.0 License](LICENSE); feel free to use this code to mess around with PyQt and RobotPy. If you want something more solid, check out the Resonance repository.
 
 ## Requisites
 In order to use and/or build Octodollop, you'll need the following:
