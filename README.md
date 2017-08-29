@@ -18,6 +18,6 @@ In order to use and/or build Octodollop, you'll need the following:
 
 ## To-do:
 - [X] Create a basic application by importing a UI file from Qt
-- [ ] Create a notification upon opening the main window
+- [X] Create a notification upon opening the main window
 - [ ] Begin work on integrating RobotPy
 - [ ] Use Python to execute code upon pressing a button/menu in Qt
