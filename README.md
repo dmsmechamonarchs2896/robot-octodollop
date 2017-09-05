@@ -1,5 +1,7 @@
 # Robot Octodollop
 
+[![Build Status](https://travis-ci.org/dmsmechamonarchs2896/robot-octodollop.svg?branch=master)](https://travis-ci.org/dmsmechamonarchs2896/robot-octodollop)
+
 **playground** - n. a place where people can play
 
 ## About this repository
