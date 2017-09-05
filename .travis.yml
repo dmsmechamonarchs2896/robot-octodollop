@@ -3,6 +3,6 @@ dist: xenial
 python:
   - "3.6.1"
 # command to install dependencies
-install: "pip install pyqt5"
+install: "apt install libc6; pip install pyqt5"
 # command to run tests
 script: python3 main.py
