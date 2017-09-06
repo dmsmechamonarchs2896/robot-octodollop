@@ -7,6 +7,10 @@ description: |
 grade: devel # must be 'stable' to release into candidate/stable channels
 confinement: devmode # use 'strict' once you have the right plugs and slots
 
+apps: 
+  robot-octodollop:
+    command: robot-octodollop
+
 parts:
   robot-octodollop:
     source: https://github.com/dmsmechamonarchs2896/robot-octodollop.git
