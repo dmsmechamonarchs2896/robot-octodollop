@@ -1,26 +1,16 @@
-# Robot Octodollop
+# Octodollop
+Official MechaMonarchs robot software for FRC 2018
 
-[![Build Status](https://travis-ci.org/dmsmechamonarchs2896/robot-octodollop.svg?branch=master)](https://travis-ci.org/dmsmechamonarchs2896/robot-octodollop)
+## About this project
+For the past few years, Team 2896 has used LabVIEW, a solid programming language, to code the robot. Although LabVIEW gets the job done, it isn't the most elegant solution or the most forward-thinking. Furthermore, LabVIEW's syntax and interface isn't easy to pick up.
 
-**playground** - n. a place where people can play
+This year, we wanted to try something different: create our robot code with Python 3 using the PyQt and the RobotPy frameworks, with the latter being specifically designed for FRC robotics. This repository holds our source code, licensed under the Apache 2.0 license. It also contains some code to automatically build a runnable version for any Linux distribution with the Snappy package manager.
 
-## About this repository
-This repo serves as a playground for [RobotPy](https://robotpy.github.io/) and [PyQt v.5](https://www.riverbankcomputing.com/software/pyqt/intro) in hopes that we may actually use this code to create software for the robot and this year's FRC competition (2018).
+## Contribute
+All of our issues and project management are available through YouTrack, an issue tracker and project management system from JetBrains that works with PyCharm, our IDE of choice. Click the banner below to open YouTrack.
 
-When something is actually made with these technologies in Octodollop, they will be dumped into [Resonance](http://www.github.com/dmsmechamonarchs2896/resonance), the name of the robot software.
+[![YouTrack Banner](https://d3nmt5vlzunoa1.cloudfront.net/youtrack/files/2015/12/YouTrack_800x320_Twitter_card-.png)](https://marquiskurt.myjetbrains.com/youtrack/issues?q=project:%20Octodollop)
 
-This code is licensed under the [Apache 2.0 License](LICENSE); feel free to use this code to mess around with PyQt and RobotPy. If you want something more solid, check out the [Resonance](http://www.github.com/dmsmechamonarchs2896/resonance) repository.
+Feel free to fork this and make a pull request back (make sure to look at the issues first)!
 
-## Requisites
-In order to use and/or build Octodollop, you'll need the following:
-* Python 3 (_not_ 2.7!)
-* RobotPy
-* Qt Creator (to build UI)
-* (recommended) PyCharm
-
-## To-do:
-- [X] Create a basic application by importing a UI file from Qt
-- [X] Create a notification upon opening the main window
-- [ ] Begin work on integrating RobotPy
-- [ ] Use Python to execute code upon pressing a button/menu in Qt
-- [ ] Create a [snappy package](http://www.snapcraft.io)
+_Created by [alicerunsonefedora](http://www.github.com/alicerunsonfedora) and the [Damien MechaMonarchs team](http://www.github.com/dmsmechamonarchs2896) with ❤️_

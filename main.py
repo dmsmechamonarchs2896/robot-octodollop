@@ -24,6 +24,7 @@ if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
 
     # Link the main window to the application
+    print("Creating the main window...")
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
@@ -32,8 +33,10 @@ if __name__ == '__main__':
     MainWindow.show()
 
     # Create a new notification to show a fake error
-    systemtray_icon = QtWidgets.QSystemTrayIcon(app)
-    systemtray_icon.show()
-    systemtray_icon.showMessage('Compiler Error', 'The identifier bendy.exe could not be resolved.',
-                                QtWidgets.QSystemTrayIcon.Warning)
+    system_tray_icon = QtWidgets.QSystemTrayIcon(app)
+    system_tray_icon.setIcon(QtGui.QIcon("menu-icon.png"))
+    system_tray_icon.show()
+    system_tray_icon.showMessage('Octodollop Ready', 'The software is ready to work with your robot.',
+                                 QtWidgets.QSystemTrayIcon.Information)
+
     sys.exit(app.exec_())
