@@ -4,12 +4,11 @@ import time
 
 
 def move_forward(seconds):
-    n = 0
-    print("Starting to move forward...")
+    end_time = time.time() + seconds
+    print("Moving forward")
 
-    while n < (seconds + 1):
+    while time.time() < end_time:
         print("^")
-        time.sleep(1)
-        n = n + 1
+        # Input code here to move robot forward
 
     print("Moved forward for " + str(seconds) + " seconds.")
