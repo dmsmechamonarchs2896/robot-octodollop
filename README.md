@@ -1,4 +1,4 @@
-# Octodollop
+# Project Octodollop
 Official MechaMonarchs robot software for FRC 2018
 
 ## About this project
