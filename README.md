@@ -19,4 +19,4 @@ This project works in PyCharm, the Python IDEA from JetBrains (the same guys beh
 All of our issues and project management are available through YouTrack, an issue tracker and project management system from JetBrains that works with PyCharm, our IDE of choice. [View project in YouTrack &rsaquo;](https://marquiskurt.myjetbrains.com/youtrack/issues?q=project:%20Octodollop)
 
 
-_Created by [alicerunsonefedora](http://www.github.com/alicerunsonfedora), [Zachary2896](http://www.github.com/Zachary2896), [joycie-smile](http://www.github.com/joycie-smile), [brown96701](http://www.github.com/brown96701), and the [Damien MechaMonarchs team](http://www.github.com/dmsmechamonarchs2896) with ❤️_
+_Created by [alicerunsonefedora](http://www.github.com/alicerunsonfedora), [Zachary2896](http://www.github.com/Zachary2896), [joycie-smile](http://www.github.com/joycie-smile), [brown96701](http://www.github.com/brown96701), and the [MechaMonarchs team](http://www.github.com/dmsmechamonarchs2896) with ❤️_
