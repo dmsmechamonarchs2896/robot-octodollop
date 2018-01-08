@@ -14,7 +14,7 @@ This project works in PyCharm, the Python IDEA from JetBrains (the same guys beh
 > Looking for how to enable the project file templates? Open your PyCharm preferences and under `Editor > File and Code Templates`, change your scheme from `Default` to `Project`.
 
 ## Contribute
-![YouTrack Banner](ytbanner.png)
+<img src = "https://github.com/dmsmechamonarchs2896/robot-octodollop/raw/master/ytbanner.png" width = "300px" padding = "16px"/>
 
 All of our issues and project management are available through YouTrack, an issue tracker and project management system from JetBrains that works with PyCharm, our IDE of choice. [View project in YouTrack &rsaquo;](https://marquiskurt.myjetbrains.com/youtrack/issues?q=project:%20Octodollop)
 
