@@ -14,10 +14,9 @@ This project works in PyCharm, the Python IDEA from JetBrains (the same guys beh
 > Looking for how to enable the project file templates? Open your PyCharm preferences and under `Editor > File and Code Templates`, change your scheme from `Default` to `Project`.
 
 ## Contribute
-All of our issues and project management are available through YouTrack, an issue tracker and project management system from JetBrains that works with PyCharm, our IDE of choice. Click the banner below to open YouTrack.
+![YouTrack Banner](ytbanner.png)
 
-[![YouTrack Banner](https://d3nmt5vlzunoa1.cloudfront.net/youtrack/files/2015/12/YouTrack_800x320_Twitter_card-.png)](https://marquiskurt.myjetbrains.com/youtrack/issues?q=project:%20Octodollop)
+All of our issues and project management are available through YouTrack, an issue tracker and project management system from JetBrains that works with PyCharm, our IDE of choice. [View project in YouTrack &rsaquo;](https://marquiskurt.myjetbrains.com/youtrack/issues?q=project:%20Octodollop)
 
-Feel free to fork this and make a pull request back (make sure to look at the issues first)!
 
-_Created by [alicerunsonefedora](http://www.github.com/alicerunsonfedora) and the [Damien MechaMonarchs team](http://www.github.com/dmsmechamonarchs2896) with ❤️_
+_Created by [alicerunsonefedora](http://www.github.com/alicerunsonfedora), [Zachary2896](http://www.github.com/Zachary2896), [joycie-smile](http://www.github.com/joycie-smile), [brown96701](http://www.github.com/brown96701), and the [Damien MechaMonarchs team](http://www.github.com/dmsmechamonarchs2896) with ❤️_
