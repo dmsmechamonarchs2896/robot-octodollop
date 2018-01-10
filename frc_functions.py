@@ -13,7 +13,7 @@ def move_forward(run_time: float):
     """
     Moves the robot forward for a set amount of time.
 
-    :param run_time: How long the function should run in seconds
+    :param run_time: Total time for the robot to move forward (in seconds)
     :return:
     """
     end_time = time.time() + run_time
@@ -31,7 +31,7 @@ def move_backward(run_time: float):
     """
     Moves the robot backward for a set amount of time.
 
-    :param run_time: How long the function should run in seconds.
+    :param run_time: Total time for the robot to move backwards (in seconds)
     :return:
     """
     end_time = time.time() + run_time
