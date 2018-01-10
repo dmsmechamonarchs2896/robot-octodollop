@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.6 (robot-octodollop-fork)" project-jdk-type="Python SDK" />
+  <component name="TaskProjectConfiguration">
+    <server type="YouTrack" url="http://marquiskurt.myjetbrains.com" />
+    <server type="YouTrack" url="https://marquiskurt.myjetbrains.com" />
+    <server type="YouTrack" url="https://marquiskurt.myjetbrains.com/youtrack" />
+  </component>
 </project>
