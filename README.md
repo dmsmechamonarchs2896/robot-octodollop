@@ -6,7 +6,7 @@ For the past few years, Team 2896 has used LabVIEW, a solid programming language
 
 This year, we wanted to try something different: create our robot code with Python 3 using the PyQt and the RobotPy frameworks, with the latter being specifically designed for FRC robotics. This repository holds our source code, licensed under the Apache 2.0 license.
 
-A LabVIEW-compatible version will be made available soon in the `robot-octodollop-labview` repository on the MechaMonarchs GitHub page.
+A LabVIEW-compatible version is available in the `robot-octodollop-labview` repository. [View code &rsaquo;](http://www.github.com/dmsmechamonarchs2896/robot-octodollop-labview)
 
 ## PyCharm
 <img src = "https://d3nmt5vlzunoa1.cloudfront.net/pycharm/files/2015/12/PyCharm_400x400_Twitter_logo_white.png" width = "100px" align = "right" />
