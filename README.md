@@ -9,7 +9,7 @@ This year, we wanted to try something different: create our robot code with Pyth
 A LabVIEW-compatible version is available in the `robot-octodollop-labview` repository. [View code &rsaquo;](http://www.github.com/dmsmechamonarchs2896/robot-octodollop-labview)
 
 ## PyCharm
-<img src = "https://d3nmt5vlzunoa1.cloudfront.net/pycharm/files/2015/12/PyCharm_400x400_Twitter_logo_white.png" width = "100px" align = "right" />
+[<img src = "https://d3nmt5vlzunoa1.cloudfront.net/pycharm/files/2015/12/PyCharm_400x400_Twitter_logo_white.png" width = "100px" align = "right" />](http://www.jetbrains.com/pycharm/)
 
 This project works in PyCharm, the Python IDEA from JetBrains (the same guys behind YouTrack and IntelliJ IDEA). If you have the Toolbox app installed and the respective extension in your browser, you can click the PyCharm icon on the GitHub page to clone it using SSH.
 
@@ -23,7 +23,7 @@ This project works in PyCharm, the Python IDEA from JetBrains (the same guys beh
 > Note: In PyCharm/PIP, the dependencies will be fetched and installed automatically.
 
 ## Contribute
-<img src = "https://github.com/dmsmechamonarchs2896/robot-octodollop/raw/master/ytbanner.png" width = "300px" padding = "16px"/>
+[<img src = "https://github.com/dmsmechamonarchs2896/robot-octodollop/raw/master/ytbanner.png" width = "300px" padding = "16px"/>](https://marquiskurt.myjetbrains.com/youtrack/issues?q=project:%20Octodollop)
 
 All of our issues and project management are available through YouTrack, an issue tracker and project management system from JetBrains that works with PyCharm, our IDE of choice. [View project in YouTrack &rsaquo;](https://marquiskurt.myjetbrains.com/youtrack/issues?q=project:%20Octodollop)
 
