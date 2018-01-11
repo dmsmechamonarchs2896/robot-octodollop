@@ -15,6 +15,13 @@ This project works in PyCharm, the Python IDEA from JetBrains (the same guys beh
 
 > Looking for how to enable the project file templates? Open your PyCharm preferences and under `Editor > File and Code Templates`, change your scheme from `Default` to `Project`.
 
+## Required Libraries
+* `robotpy-wpilib-utilities`
+* `pygame`
+* `pyinstaller`
+
+> Note: In PyCharm/PIP, the dependencies will be fetched and installed automatically.
+
 ## Contribute
 <img src = "https://github.com/dmsmechamonarchs2896/robot-octodollop/raw/master/ytbanner.png" width = "300px" padding = "16px"/>
 
