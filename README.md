@@ -19,7 +19,7 @@ This project works in PyCharm, the Python IDEA from JetBrains (the same guys beh
 * `robotpy-wpilib-utilities`
 * `pygame`
 * `pyinstaller`
-* `pyside`
+* `PyQt5`
 
 > Note: In PyCharm/PIP, the dependencies will be fetched and installed automatically.
 
