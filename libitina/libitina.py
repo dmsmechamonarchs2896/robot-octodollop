@@ -11,6 +11,8 @@ from libitina.frc_2018 import *
 class Libitina:
 
     third_eye = False
+    selected_alliance = 0 # 0 = red, 1 = blue
+    selected_position = 0 # 0 = left, 1 = middle, 2 = right
 
     def enable_third_eye(self):
         """
@@ -47,5 +49,18 @@ class Libitina:
         """
         self.disable_third_eye()
 
+    def save_settings(self):
+    	"""
+    	Writes any settings into a configuration file (libitina.chr)
+    	
+    	:return:
+    	"""
+    	print("Saving settings...")
+    	with open('libitina.chr', 'w+') as f:
+    		f.write('0\n1')
+    	
+    
     def __init__(self):
         print("Libitina is initialized")
+        self.third_eye = False
+
