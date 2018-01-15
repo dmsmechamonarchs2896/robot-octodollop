@@ -6,17 +6,27 @@ For the past few years, Team 2896 has used LabVIEW, a solid programming language
 
 This year, we wanted to try something different: create our robot code with Python 3 using the PyQt and the RobotPy frameworks, with the latter being specifically designed for FRC robotics. This repository holds our source code, licensed under the Apache 2.0 license.
 
+A LabVIEW-compatible version is available in the `robot-octodollop-labview` repository. [View code &rsaquo;](http://www.github.com/dmsmechamonarchs2896/robot-octodollop-labview)
+
 ## PyCharm
-<img src = "https://d3nmt5vlzunoa1.cloudfront.net/pycharm/files/2015/12/PyCharm_400x400_Twitter_logo_white.png" width = "100px" align = "right" />
+[<img src = "https://d3nmt5vlzunoa1.cloudfront.net/pycharm/files/2015/12/PyCharm_400x400_Twitter_logo_white.png" width = "100px" align = "right" />](http://www.jetbrains.com/pycharm/)
 
 This project works in PyCharm, the Python IDEA from JetBrains (the same guys behind YouTrack and IntelliJ IDEA). If you have the Toolbox app installed and the respective extension in your browser, you can click the PyCharm icon on the GitHub page to clone it using SSH.
 
 > Looking for how to enable the project file templates? Open your PyCharm preferences and under `Editor > File and Code Templates`, change your scheme from `Default` to `Project`.
 
+## Required Libraries
+* `robotpy-wpilib-utilities`
+* `pygame`
+* `pyinstaller`
+* `PyQt5`
+
+> Note: In PyCharm/PIP, the dependencies will be fetched and installed automatically.
+
 ## Contribute
-<img src = "https://github.com/dmsmechamonarchs2896/robot-octodollop/raw/master/ytbanner.png" width = "300px" padding = "16px"/>
+[<img src = "https://github.com/dmsmechamonarchs2896/robot-octodollop/raw/master/ytbanner.png" width = "300px" padding = "16px"/>](https://marquiskurt.myjetbrains.com/youtrack/issues?q=project:%20Octodollop)
 
 All of our issues and project management are available through YouTrack, an issue tracker and project management system from JetBrains that works with PyCharm, our IDE of choice. [View project in YouTrack &rsaquo;](https://marquiskurt.myjetbrains.com/youtrack/issues?q=project:%20Octodollop)
 
 
-_Created by [alicerunsonefedora](http://www.github.com/alicerunsonfedora), [Zachary2896](http://www.github.com/Zachary2896), [joycie-smile](http://www.github.com/joycie-smile), [brown96701](http://www.github.com/brown96701), and the [MechaMonarchs team](http://www.github.com/dmsmechamonarchs2896) with ❤️_
+**Created by [Marquis Kurt](http://www.github.com/alicerunsonfedora), [Zachary Hamada](http://www.github.com/Zachary2896), [Joyce Caberto](http://www.github.com/joycie-smile), [Wyley Brown](http://www.github.com/brown96701), [Alex Patino](http://www.github.com/aerdnaxelA), and the [MechaMonarchs](http://www.github.com/dmsmechamonarchs2896) with ❤️**
