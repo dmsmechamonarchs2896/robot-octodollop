@@ -5,7 +5,7 @@
 #
 # Offers a dialog for changing settings such as position and alliance
 # from PyQt5 import *
-from libitina.libitina import Libitina
+from libitina.yuri import Libitina
 
 
 if __name__ == '__main__':

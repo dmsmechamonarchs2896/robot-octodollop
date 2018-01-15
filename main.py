@@ -4,7 +4,7 @@
 # Licensed under Apache 2.0 License
 #
 # Calls all functions needed and runs the main program
-from libitina.libitina import Libitina
+from libitina.yuri import Libitina
 from libitina.frc_2018 import *
 
 
