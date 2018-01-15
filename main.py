@@ -14,6 +14,7 @@ robot = Libitina()
 if __name__ == '__main__':
     # Put some main code here!
     robot.enable_third_eye()
-    robot.save_settings()
+    robot.load_settings()
+    robot.report_self_information()
     run_automatically()
 
