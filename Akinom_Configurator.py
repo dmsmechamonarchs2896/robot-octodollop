@@ -62,21 +62,18 @@ class Program:
                 self.selected_alliance = linecache.getline(file, 1)
                 self.selected_position = linecache.getline(file, 2)
                 if self.alliance_entry.get() == self.null_field:
-                    self.alliance_entry.insert(0, str(self.selected_alliance))
+                    self.alliance_entry.insert(0, self.selected_alliance)
                 else:
                     self.alliance_entry.delete(0, 'end')
-                    self.alliance_entry.insert(0, str(self.selected_alliance))
+                    self.alliance_entry.insert(0, self.selected_alliance)
 
                 if self.position_entry.get() == self.null_field:
-                    self.position_entry.insert(0, str(self.selected_position))
+                    self.position_entry.insert(0, self.selected_position)
                 else:
                     self.position_entry.delete(0, 'end')
-                    self.position_entry.insert(0, str(self.selected_position))
+                    self.position_entry.insert(0, self.selected_position)
 
-                # Grab position info and place into entry field
-
-
-            except Exception as e:
+            except:
                 messagebox.showerror('Error', self.open_file_error)
             return
 
