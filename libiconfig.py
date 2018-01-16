@@ -4,9 +4,10 @@
 # Licensed under Apache 2.0 License
 #
 # Offers a dialog for changing settings such as position and alliance
-from tkinter import *
 import tkinter
 from tkinter import messagebox
+from tkinter.filedialog import askopenfilename, asksaveasfile
+
 import linecache
 
 
@@ -16,15 +17,19 @@ class Program():
     selected_position = "left"
 
     # Create the alliance and position elements
-    alliance_label = Label(text="Selected alliance")
-    alliance_entry = Entry()
-    position_label = Label(text="Selected position")
-    position_entry = Entry()
+    alliance_label = tkinter.Label(text="Selected alliance")
+    alliance_entry = tkinter.Entry()
+    position_label = tkinter.Label(text="Selected position")
+    position_entry = tkinter.Entry()
+
+    null_field = ''
 
     # List all of the possible errors
+    open_file_error = 'The selected file could not be opened.'
     enter_key_error = 'One or more fields contains an enter key. Please enter the values without hitting ENTER.'
     alliance_entry_error = 'Invalid argument for alliance field.'
     position_entry_error = 'Invalid argument for position field.'
+    user_cancel_error = 'The user cancelled the operation.'
     save_file_success_message = 'Your Libitina configuration file has been successfully saved.'
 
     # Initializes the window and puts everything into a grid
@@ -36,53 +41,60 @@ class Program():
         self.position_entry.grid(row=1, column=1)
 
         # Place the load config button into grid
-        load_settings_button = Button(text="Load config", command=self.load_config)
+        load_settings_button = tkinter.Button(text="Load config", command=self.load_config)
         load_settings_button.grid(row=2, column=0)
 
         # Place the save config button into grid
-        save_settings_button = Button(text="Save config", command=self.save_config)
+        save_settings_button = tkinter.Button(text="Save config", command=self.save_config)
         save_settings_button.grid(row=2, column=1)
 
     # Loads Libitina info into entry fields
     def load_config(self):
-        # Grab alliance info and place into entry field
-        self.selected_alliance = linecache.getline('libitina.chr', 1)
-        self.alliance_entry.insert(0, str(self.selected_alliance))
 
-        # Grab position info and place into entry field
-        self.selected_position = linecache.getline('libitina.chr', 2)
-        self.position_entry.insert(0, str(self.selected_position))
+        file = askopenfilename(filetypes=(("Libitina config files", "*.chr"),
+                                           ("All files", "*.*")))
+        if file:
+            try:
+                # Grab alliance info and place into entry field
+                self.selected_alliance = linecache.getline(file, 1)
+                self.selected_position = linecache.getline(file, 2)
+                if self.alliance_entry.get() == self.null_field:
+                    self.alliance_entry.insert(0, str(self.selected_alliance))
+                else:
+                    self.alliance_entry.delete(0, 'end')
+                    self.alliance_entry.insert(0, str(self.selected_alliance))
+
+                if self.position_entry.get() == self.null_field:
+                    self.position_entry.insert(0, str(self.selected_position))
+                else:
+                    self.position_entry.delete(0, 'end')
+                    self.position_entry.insert(0, str(self.selected_position))
+
+                # Grab position info and place into entry field
+
+
+            except Exception as e:
+                messagebox.showerror('Error', self.open_file_error)
+            return
 
     # Save Libitina info into .chr file
     def save_config(self):
-        # Check if alliance field has proper entry
-        if self.alliance_entry.get() != "red" or self.alliance_entry.get() != "blue":
-            # Print error and stop
-            messagebox.showerror('Error', self.alliance_entry_error)
-            return 1
-        else:
-            # Set Libitina alliance info
-            self.selected_alliance = self.alliance_entry.get()
+        ally = self.alliance_entry.get()
+        pos = self.position_entry.get()
+        file = asksaveasfile(mode="w", defaultextension='.chr')
 
-            # Check if position field has proper entry
-            fy = self.position_entry.get()
-            if fy != "left" or fy != "middle" or fy != "right":
-                # Print error and stop
-                messagebox.showerror('Error', self.position_entry_error)
-                return 1
-            else:
-                # Set Libitina position info
-                self.selected_position = self.alliance_entry.get()
+        if file is None:
+            messagebox.showerror('Error', self.user_cancel_error)
+            return
 
-                # Create a file opener and save the data
-                with open('libitina.chr', 'w+') as f:
-                    f.write(str(self.selected_alliance) + "\n" + str(self.selected_position))
+        assert isinstance(file, object)
+        file.writelines(ally + "\n" + pos)
+        file.close()
 
-                # Print success and stop
-                messagebox.showinfo('Success', self.save_file_success_message, icon="warning")
+        # Print success and stop
+        messagebox.showinfo('Success', self.save_file_success_message, icon="warning")
 
 
-if __name__ == "__main__":
-    # Call the program and open the window
-    program = Program()
-    mainloop()
+# Call the program and open the window
+program = Program()
+tkinter.mainloop()
