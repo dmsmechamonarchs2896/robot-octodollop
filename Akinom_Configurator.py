@@ -51,7 +51,7 @@ class Program():
     # Loads Akinom info into entry fields
     def load_config(self):
 
-        file = askopenfilename(filetypes=(("Akinom config files", "*.akmcfg"),
+        file = askopenfilename(filetypes=(("Akinom config files", "*.amc"),
                                            ("All files", "*.*")))
         if file:
             try:
@@ -81,18 +81,16 @@ class Program():
     def save_config(self):
         ally = self.alliance_entry.get()
         pos = self.position_entry.get()
-        file = asksaveasfile(mode="w", defaultextension='.akmcfg')
+        file = asksaveasfile(mode="w", defaultextension='.amc')
 
         if file is None:
             messagebox.showerror('Error', self.user_cancel_error)
             return
-        else:
-            assert isinstance(file, object)
-            file.writelines(ally + "\n" + pos)
-            file.close()
 
-            # Print success and stop
-            messagebox.showinfo('Success', self.save_file_success_message, icon="warning")
+        assert isinstance(file, object)
+        file.writelines(ally + "\n" + pos)
+        file.close()
+
 
 
 # Call the program and open the window

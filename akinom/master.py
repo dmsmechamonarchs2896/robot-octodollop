@@ -51,19 +51,19 @@ class Monika(object):
 
     def load_settings(self):
         """
-        Loads settings from a configuration file (akinom.akmcfg)
+        Loads settings from a configuration file (akinom.amc)
 
         :return:
         """
         print("Loading settings...")
-        self.selected_alliance = linecache.getline('monika.akmcfg', 1)
-        self.selected_position = linecache.getline('monika.akmcfg', 2)
+        self.selected_alliance = linecache.getline('monika.amc', 1)
+        self.selected_position = linecache.getline('monika.amc', 2)
 
         print("Settings loaded")
 
     def report_self_information(self):
         """
-        Reports system information, including alliance and position information, from a config file (akinom.akmcfg).
+        Reports system information, including alliance and position information, from a config file (akinom.amc).
 
         :return:
         """
