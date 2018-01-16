@@ -1,4 +1,4 @@
-# libitina
+# yuri
 # Created by marquiskurt
 # robot-octodollop-fork (C) 2018 MechaMonarchs Team.
 # Licensed under Apache 2.0 License
@@ -10,10 +10,9 @@ import linecache
 
 
 class Libitina(object):
-
     third_eye = False
-    selected_alliance = 0 # 0 = red, 1 = blue
-    selected_position = 0 # 0 = left, 1 = middle, 2 = right
+    selected_alliance = "red"
+    selected_position = "left"
 
     def enable_third_eye(self):
         """
@@ -51,43 +50,29 @@ class Libitina(object):
         self.disable_third_eye()
 
     def load_settings(self):
-    	"""
-    	Loads settings from a configuration file (libitina.chr)
-    	
-    	:return:
-    	"""
-    	print("Loading settings...")
-    	self.selected_alliance = linecache.getline('libitina.chr', 1)
-    	self.selected_position = linecache.getline('libitina.chr', 2)
-    
-    	print("Settings loaded")
-    
-    
+        """
+        Loads settings from a configuration file (libitina.chr)
+
+        :return:
+        """
+        print("Loading settings...")
+        self.selected_alliance = linecache.getline('libitina.chr', 1)
+        self.selected_position = linecache.getline('libitina.chr', 2)
+
+        print("Settings loaded")
+
     def report_self_information(self):
-    	"""
-    	Reports system information, including alliance and position information, from a configuration file (libitina.chr).
-    	
-    	:return:
-    	"""
-    	if self.third_eye == True:
-    		print("Selected alliance is: " + str(self.selected_alliance))
-    		print("Selected position is: " + str(self.selected_position))
-    	else:
-    		print("Sorry, this command can only be run when the Third Eye has been enabled.")
-    
-    
-    def save_settings(self):
-    	"""
-    	Writes any settings into a configuration file (libitina.chr)
-    	
-    	:return:
-    	"""
-    	print("Saving settings...")
-    	with open('libitina.chr', 'w+') as f:
-    		f.write(str(self.selected_alliance) + "\n" + str(self.selected_position))
-    	
-    
+        """
+        Reports system information, including alliance and position information, from a config file (libitina.chr).
+
+        :return:
+        """
+        if self.third_eye:
+            print("Selected alliance is: " + self.selected_alliance)
+            print("Selected position is: " + self.selected_position)
+        else:
+            print("Sorry, this command can only be run when the Third Eye has been enabled.")
+
     def __init__(self):
         print("Libitina is initialized")
         self.third_eye = False
-
