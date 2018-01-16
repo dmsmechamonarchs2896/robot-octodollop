@@ -1,4 +1,4 @@
-<img width = "256px" align = "right" src = "./icon.png" />
+<img width = "128px" align = "right" src = "./icon.png" />
 
 # Libitina
 **Codename Octodollop**
