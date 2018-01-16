@@ -8,7 +8,7 @@ Usage:
 from setuptools import setup
 
 APP = ['Akinom_Configurator.py']
-DATA_FILES = ['akinom.akmcfg']
+DATA_FILES = ['monika.akmcfg']
 OPTIONS = {'iconfile': '/Users/marquiskurt/PycharmProjects/robot-octodollop-fork/icon.icns'}
 
 setup(
