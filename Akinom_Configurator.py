@@ -1,4 +1,4 @@
-# AkinomConfigurator
+# Akinom_Configurator
 # Created by marquiskurt
 # robot-octodollop (C) 2018 MechaMonarchs Team.
 # Licensed under Apache 2.0 License
@@ -11,16 +11,10 @@ from tkinter.filedialog import askopenfilename, asksaveasfile
 import linecache
 
 
-class Program():
+class Program:
     # Import fake Akinom info
     selected_alliance = "red"
     selected_position = "left"
-
-    # Create the alliance and position elements
-    alliance_label = tkinter.Label(text="Selected alliance")
-    alliance_entry = tkinter.Entry()
-    position_label = tkinter.Label(text="Selected position")
-    position_entry = tkinter.Entry()
 
     null_field = ''
 
@@ -33,7 +27,16 @@ class Program():
     save_file_success_message = 'Your Akinom configuration file has been successfully saved.'
 
     # Initializes the window and puts everything into a grid
-    def __init__(self):
+    def __init__(self, master):
+        self.master = master
+        master.title("Akinom Configurator")
+
+        # Create the alliance and position elements
+        self.alliance_label = tkinter.Label(text="Selected alliance")
+        self.alliance_entry = tkinter.Entry()
+        self.position_label = tkinter.Label(text="Selected position")
+        self.position_entry = tkinter.Entry()
+
         # Place alliance and position elements into grid
         self.alliance_label.grid(row=0, column=0)
         self.alliance_entry.grid(row=0, column=1)
@@ -92,7 +95,8 @@ class Program():
         file.close()
 
 
-
 # Call the program and open the window
-program = Program()
-tkinter.mainloop()
+root = tkinter.Tk()
+program = Program(root)
+root.resizable(False, False)
+root.mainloop()
