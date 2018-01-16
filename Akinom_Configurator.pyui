@@ -1,0 +1,158 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{0, 0}, {480, 320}}",
+        "class" : "NavigationView",
+        "attributes" : {
+          "flex" : "WH",
+          "title_bar_color" : "RGBA(1.0, 1.0, 1.0, 1.0)",
+          "frame" : "{{110, 110}, {320, 320}}",
+          "title_color" : "RGBA(0.33, 0.33, 0.33, 1.0)",
+          "uuid" : "04757812-3FD4-497A-8C1C-37CC97E524B2",
+          "class" : "NavigationView",
+          "root_view_name" : "Akinom Configurator (iOS)",
+          "name" : "navigation_view"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{13, 206}, {449, 99}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "text_color" : "RGBA(0.542453,0.542453,0.542453,1.000000)",
+          "border_width" : 0,
+          "frame" : "{{195, 254}, {150, 32}}",
+          "uuid" : "99C93271-6799-4A61-9373-CC8ADEB9DD91",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Any changes made after hitting ‘Save’ will overwrite existing configurations in monika.amc. You won’t be able to read from existing files or create new ones.",
+          "corner_radius" : 0,
+          "name" : "warning_notice",
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{13, 70}, {150, 29}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "alliance_label",
+          "frame" : "{{195, 254}, {150, 32}}",
+          "uuid" : "6A1A7417-5DAC-4E3D-B75F-0D39C2D47E46",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Selected Alliance",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{13, 113}, {150, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "position_label",
+          "frame" : "{{195, 254}, {150, 32}}",
+          "uuid" : "4A9B6118-ABCE-4F37-8694-15FED75B77E6",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Selected Position",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{240, 170}, {80, 32}}",
+        "class" : "Button",
+        "attributes" : {
+          "action" : "save_config",
+          "frame" : "{{200, 144}, {80, 32}}",
+          "title" : "Save",
+          "uuid" : "9C9ED219-515A-4FDE-BF9E-2EFE2908C374",
+          "class" : "Button",
+          "font_bold" : true,
+          "name" : "save_button",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{342, 70}, {120, 29}}",
+        "class" : "SegmentedControl",
+        "attributes" : {
+          "segments" : "Red|Blue",
+          "frame" : "{{180, 146}, {120, 29}}",
+          "uuid" : "CF43140A-90E5-411B-A1E4-A031BAEEC512",
+          "name" : "segmentedcontrol1",
+          "class" : "SegmentedControl",
+          "flex" : "LR"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{253, 113}, {209, 29}}",
+        "class" : "SegmentedControl",
+        "attributes" : {
+          "segments" : "Left|Middle|Right",
+          "frame" : "{{180, 146}, {120, 29}}",
+          "uuid" : "4A460413-BF7A-4399-9560-819D9AB124AC",
+          "name" : "segmentedcontrol2",
+          "class" : "SegmentedControl",
+          "flex" : "LR"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{160, 170}, {80, 32}}",
+        "class" : "Button",
+        "attributes" : {
+          "action" : "reset_config",
+          "frame" : "{{200, 144}, {80, 32}}",
+          "title" : "Reset",
+          "uuid" : "C805CEB7-609B-4D89-840D-3B4A70CD6F72",
+          "class" : "Button",
+          "name" : "reset_config",
+          "font_size" : 15
+        },
+        "selected" : false
+      }
+    ],
+    "frame" : "{{0, 0}, {480, 320}}",
+    "class" : "View",
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]
