@@ -1,4 +1,4 @@
-# libiconfig
+# AkinomConfigurator
 # Created by marquiskurt
 # robot-octodollop (C) 2018 MechaMonarchs Team.
 # Licensed under Apache 2.0 License
@@ -12,7 +12,7 @@ import linecache
 
 
 class Program():
-    # Import fake Libitina info
+    # Import fake Akinom info
     selected_alliance = "red"
     selected_position = "left"
 
@@ -30,7 +30,7 @@ class Program():
     alliance_entry_error = 'Invalid argument for alliance field.'
     position_entry_error = 'Invalid argument for position field.'
     user_cancel_error = 'The user cancelled the operation.'
-    save_file_success_message = 'Your Libitina configuration file has been successfully saved.'
+    save_file_success_message = 'Your Akinom configuration file has been successfully saved.'
 
     # Initializes the window and puts everything into a grid
     def __init__(self):
@@ -41,17 +41,17 @@ class Program():
         self.position_entry.grid(row=1, column=1)
 
         # Place the load config button into grid
-        load_settings_button = tkinter.Button(text="Load config", command=self.load_config)
+        load_settings_button = tkinter.Button(text="Load from file", command=self.load_config)
         load_settings_button.grid(row=2, column=0)
 
         # Place the save config button into grid
-        save_settings_button = tkinter.Button(text="Save config", command=self.save_config)
+        save_settings_button = tkinter.Button(text="Save to disk", command=self.save_config)
         save_settings_button.grid(row=2, column=1)
 
-    # Loads Libitina info into entry fields
+    # Loads Akinom info into entry fields
     def load_config(self):
 
-        file = askopenfilename(filetypes=(("Libitina config files", "*.chr"),
+        file = askopenfilename(filetypes=(("Akinom config files", "*.akmcfg"),
                                            ("All files", "*.*")))
         if file:
             try:
@@ -77,22 +77,22 @@ class Program():
                 messagebox.showerror('Error', self.open_file_error)
             return
 
-    # Save Libitina info into .chr file
+    # Save Akinom info into .chr file
     def save_config(self):
         ally = self.alliance_entry.get()
         pos = self.position_entry.get()
-        file = asksaveasfile(mode="w", defaultextension='.chr')
+        file = asksaveasfile(mode="w", defaultextension='.akmcfg')
 
         if file is None:
             messagebox.showerror('Error', self.user_cancel_error)
             return
+        else:
+            assert isinstance(file, object)
+            file.writelines(ally + "\n" + pos)
+            file.close()
 
-        assert isinstance(file, object)
-        file.writelines(ally + "\n" + pos)
-        file.close()
-
-        # Print success and stop
-        messagebox.showinfo('Success', self.save_file_success_message, icon="warning")
+            # Print success and stop
+            messagebox.showinfo('Success', self.save_file_success_message, icon="warning")
 
 
 # Call the program and open the window

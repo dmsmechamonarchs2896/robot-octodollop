@@ -4,11 +4,11 @@
 # Licensed under Apache 2.0 License
 #
 # Calls all functions needed and runs the main program
-from libitina.yuri import Libitina
-from libitina.frc_2018 import *
+from akinom.master import Monika
+from akinom.frc_2018 import *
 
 
-robot = Libitina()
+robot = Monika()
 
 # Start the main process
 if __name__ == '__main__':

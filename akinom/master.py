@@ -4,12 +4,12 @@
 # Licensed under Apache 2.0 License
 #
 # Hosts the properties of the robot, including alliance information and position on the field
-from libitina.frc_functions import *
-from libitina.frc_2018 import *
+from akinom.frc_functions import *
+from akinom.frc_2018 import *
 import linecache
 
 
-class Libitina(object):
+class Monika(object):
     third_eye = False
     selected_alliance = "red"
     selected_position = "left"
@@ -51,19 +51,19 @@ class Libitina(object):
 
     def load_settings(self):
         """
-        Loads settings from a configuration file (libitina.chr)
+        Loads settings from a configuration file (akinom.akmcfg)
 
         :return:
         """
         print("Loading settings...")
-        self.selected_alliance = linecache.getline('libitina.chr', 1)
-        self.selected_position = linecache.getline('libitina.chr', 2)
+        self.selected_alliance = linecache.getline('monika.akmcfg', 1)
+        self.selected_position = linecache.getline('monika.akmcfg', 2)
 
         print("Settings loaded")
 
     def report_self_information(self):
         """
-        Reports system information, including alliance and position information, from a config file (libitina.chr).
+        Reports system information, including alliance and position information, from a config file (akinom.akmcfg).
 
         :return:
         """

@@ -7,8 +7,8 @@ Usage:
 
 from setuptools import setup
 
-APP = ['libiconfig.py']
-DATA_FILES = ['libitina.chr']
+APP = ['Akinom_Configurator.py']
+DATA_FILES = ['akinom.akmcfg']
 OPTIONS = {'iconfile': '/Users/marquiskurt/PycharmProjects/robot-octodollop-fork/icon.icns'}
 
 setup(

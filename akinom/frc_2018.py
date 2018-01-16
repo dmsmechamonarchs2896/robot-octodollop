@@ -4,7 +4,7 @@
 # Licensed under Apache 2.0 License
 #
 # Provides the functions needed for the robot specific to the FRC 2018 competition
-from libitina.frc_functions import *
+from akinom.frc_functions import *
 
 
 def run_automatically():
