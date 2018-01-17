@@ -7,8 +7,11 @@
 import tkinter
 from tkinter import messagebox
 from tkinter.filedialog import askopenfilename, asksaveasfile
+from akinom.errors import ConfigureError
 
 import linecache
+
+error = ConfigureError()
 
 
 class Program:
@@ -19,12 +22,7 @@ class Program:
     null_field = ''
 
     # List all of the possible errors
-    open_file_error = 'The selected file could not be opened.'
-    enter_key_error = 'One or more fields contains an enter key. Please enter the values without hitting ENTER.'
-    alliance_entry_error = 'Invalid argument for alliance field.'
-    position_entry_error = 'Invalid argument for position field.'
-    user_cancel_error = 'The user cancelled the operation.'
-    save_file_success_message = 'Your Akinom configuration file has been successfully saved.'
+
 
     # Initializes the window and puts everything into a grid
     def __init__(self, master):
@@ -74,7 +72,7 @@ class Program:
                     self.position_entry.insert(0, self.selected_position)
 
             except:
-                messagebox.showerror('Error', self.open_file_error)
+                messagebox.showerror('Error', error.open_file)
             return
 
     # Save Akinom info into .chr file
@@ -84,7 +82,7 @@ class Program:
         file = asksaveasfile(mode="w", defaultextension='.amc')
 
         if file is None:
-            messagebox.showerror('Error', self.user_cancel_error)
+            messagebox.showerror('Error', error.user_cancel)
             return
 
         assert isinstance(file, object)
