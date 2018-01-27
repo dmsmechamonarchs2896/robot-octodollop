@@ -4,4 +4,11 @@
 # Licensed under Apache 2.0 License
 #
 # Provides the functions needed for the robot specific to the FRC 2018 competition
-from frc_functions import *
+from akinom.frc_functions import *
+
+
+def run_automatically():
+    # Define the autonomous code here.
+    print("Running autonomous code...")
+    move_forward(3)
+    stop()

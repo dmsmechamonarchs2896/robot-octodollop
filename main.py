@@ -4,11 +4,17 @@
 # Licensed under Apache 2.0 License
 #
 # Calls all functions needed and runs the main program
-from frc_functions import *
+from akinom.master import Monika
+from akinom.frc_2018 import *
 
+
+robot = Monika()
 
 # Start the main process
 if __name__ == '__main__':
     # Put some main code here!
-    print("Hi, Monika.")
-    move_forward(5)
+    robot.enable_third_eye()
+    robot.load_settings()
+    robot.report_self_information()
+    run_automatically()
+

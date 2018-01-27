@@ -1,22 +1,28 @@
-# Project Octodollop
+<img width = "128px" align = "right" src = "./icon.png" />
+
+# Akinom
+**Codename Octodollop**
+
 Official MechaMonarchs robot software for FRC 2018
 
-## About this project
-For the past few years, Team 2896 has used LabVIEW, a solid programming language, to code the robot. Although LabVIEW gets the job done, it isn't the most elegant solution or the most forward-thinking. Furthermore, LabVIEW's syntax and interface isn't easy to pick up.
+## About Akinom
+For the past few years, Team 2896 has used LabVIEW, a solid programming language, to code the robot. Although LabVIEW gets the job done, it isn't the most elegant solution or the most forward-thinking. Furthermore, LabVIEW's syntax and interface isn't easy to pick up for aspiring developers, especially those who come from text-based languages. This year, we wanted to try creating a robot program in Python 3 with the RobotPy frameworks to control the robot while at the same time creating a shell for future competition.
 
-This year, we wanted to try something different: create our robot code with Python 3 using the PyQt and the RobotPy frameworks, with the latter being specifically designed for FRC robotics. This repository holds our source code, licensed under the Apache 2.0 license.
+Akinom is a collection of desktop and mobile tools to make the robot function. The Akinom Configurator provides an easy way to configure the robot's information regarding alliance and field position information into a configuration file (`monika.amc`). The robot's main code and its functions work with that configuration file to move the robot autonomously and through teleoperated modes accordingly. We plan to add more soon.
 
-## PyCharm
-<img src = "https://d3nmt5vlzunoa1.cloudfront.net/pycharm/files/2015/12/PyCharm_400x400_Twitter_logo_white.png" width = "100px" align = "right" />
+A LabVIEW-compatible version is available in the `robot-octodollop-labview` repository, though it will not rely on `monika.amc`. [View code &rsaquo;](http://www.github.com/dmsmechamonarchs2896/robot-octodollop-labview)
 
-This project works in PyCharm, the Python IDEA from JetBrains (the same guys behind YouTrack and IntelliJ IDEA). If you have the Toolbox app installed and the respective extension in your browser, you can click the PyCharm icon on the GitHub page to clone it using SSH.
-
-> Looking for how to enable the project file templates? Open your PyCharm preferences and under `Editor > File and Code Templates`, change your scheme from `Default` to `Project`.
+## Required Modules
+* `robotpy-wpilib-utilities`
+* `pygame`
+* `py2app` (0.13)
+* `tkinter`
+* `ui` (iOS)
+* `notification` (iOS)
+> Note: In PyCharm/PIP, the dependencies will be fetched and installed automatically.
 
 ## Contribute
-<img src = "https://github.com/dmsmechamonarchs2896/robot-octodollop/raw/master/ytbanner.png" width = "300px" padding = "16px"/>
-
-All of our issues and project management are available through YouTrack, an issue tracker and project management system from JetBrains that works with PyCharm, our IDE of choice. [View project in YouTrack &rsaquo;](https://marquiskurt.myjetbrains.com/youtrack/issues?q=project:%20Octodollop)
+Contribution information, including issue tracking and a list of contributors to the project, can be found in the [CONTRIB.md](CONTRIB.md) file.
 
 
-_Created by [alicerunsonefedora](http://www.github.com/alicerunsonfedora), [Zachary2896](http://www.github.com/Zachary2896), [joycie-smile](http://www.github.com/joycie-smile), [brown96701](http://www.github.com/brown96701), and the [MechaMonarchs team](http://www.github.com/dmsmechamonarchs2896) with ❤️_
+
